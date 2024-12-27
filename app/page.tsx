@@ -3,7 +3,7 @@ import Products from '@/components/Products'
 
 export default function Home() {
   return (
-    <main className='container mx-auto px-4 py-8'>
+    <main className='container mx-auto px-8 py-4'>
       <div className='grid gap-6'>
         <Hero />
         <Products />
