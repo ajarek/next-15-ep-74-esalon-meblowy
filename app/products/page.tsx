@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button,  } from './ui/button'
-import { Card, CardHeader,CardTitle, CardDescription, CardContent } from './ui/card'
+import { Button,  } from '@/components/ui/button'
+import { Card, CardHeader,CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 
 const Products = () => {
   return (
