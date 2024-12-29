@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Stół",
+    "price": 1000,
+    "description": "Piękny stół do Twojego domu.",
+    "image": "/images/furniture-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ławo-Stół",
+    "price": 1200,
+    "description": "Piękny ławo-stół do Twojego domu.",
+    "image": "/images/furniture-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Stół",
+    "price": 1300,
+    "description": "Piękny stół do Twojego domu.",
+    "image": "/images/furniture-3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ława",
+    "price": 1100,
+    "description": "Piękna ława do Twojego domu.",
+    "image": "/images/furniture-4.jpg"
+  }
+  
+
+
+  
+]
