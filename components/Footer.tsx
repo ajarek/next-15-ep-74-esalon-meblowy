@@ -1,6 +1,5 @@
 import React from 'react'
-    import { Facebook, Instagram, Twitter } from 'lucide-react'
-
+    import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
     const Footer = () => {
       return (
         <footer className='bg-background text-foreground py-8 border-t-2'>
@@ -11,13 +10,13 @@ import React from 'react'
             </p>
             <div className='flex gap-4'>
               <a href='#' aria-label='Facebook'>
-                <Facebook size={24} />
+                <FaFacebookF size={24} />
               </a>
               <a href='#' aria-label='Instagram'>
-                <Instagram size={24} />
+                <FaInstagram size={24} />
               </a>
               <a href='#' aria-label='Twitter'>
-                <Twitter size={24} />
+                <FaTwitter size={24} />
               </a>
             </div>
           </div>
