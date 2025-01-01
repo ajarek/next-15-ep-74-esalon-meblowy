@@ -30,6 +30,7 @@ const Handmade = () => {
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className='object-cover'
+              priority
             />
             </CardHeader>
             <CardContent>

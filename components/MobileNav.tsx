@@ -20,9 +20,10 @@ const MobileNav = () => {
         <SheetContent
           side='left'
           className='border-none bg-card text-card-foreground  shadow-none lg:hidden '
+          aria-describedby='mobile-nav'
         >
           <SheetTitle className='text-xl font-semibold uppercase italic '>
-            <Link href='/'>@Salon Meblowy</Link>
+            <Link href='/' aria-label='Stron Główna'>@Salon Meblowy</Link>
           </SheetTitle>
           <div className='flex flex-col gap-4 mt-4 '>
             <Link aria-label='Porozmawiajmy' href='contact'>Porozmawiajmy</Link>
