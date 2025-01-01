@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  
   children,
 }: Readonly<{
   children: React.ReactNode
@@ -20,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang='pl'>
       <body className={inter.className}>
-      <Navbar/>
-        {children}
-        <Footer/>
-        </body>
+        <div className='max-w-7xl mx-auto'>
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }

@@ -2,12 +2,12 @@ import React from 'react'
     import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
     const Footer = () => {
       return (
-        <footer className='bg-background text-foreground py-8 border-t-2'>
-          <div className='container mx-auto px-4 flex items-center justify-between'>
-            <p>
+        <footer className='bg-background text-foreground py-4 border-t-2'>
+          <div className='container mx-auto px-4 flex flex-wrap items-center justify-between gap-4'>
+            <div>
               &copy; {new Date().getFullYear()} Salon Meblowy. All rights
               reserved.
-            </p>
+            </div>
             <div className='flex gap-4'>
               <a href='#' aria-label='Facebook'>
                 <FaFacebookF size={24} />

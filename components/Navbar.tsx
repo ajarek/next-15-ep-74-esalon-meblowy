@@ -5,7 +5,7 @@ import MobileNav from './MobileNav'
 
 const Navbar = () => {
   return (
-    <div className='h-12 border-b-2 px-4 fixed top-0 w-full z-10 bg-background'>
+    <div className='max-w-7xl mx-auto file:h-12 border-b-2 px-4 fixed top-0 w-full z-10 bg-background'>
       <nav className='h-full flex items-center justify-between container mx-auto px-4'>
         <Link aria-label='Stron Główna' href='/'>
       <h1 className="text-2xl font-bold ">@Salon Meblowy</h1>
