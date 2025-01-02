@@ -5,8 +5,7 @@ import React from 'react'
         <footer className='bg-background text-foreground py-4 border-t-2'>
           <div className='container mx-auto px-4 flex flex-wrap items-center justify-between gap-4'>
             <div>
-              &copy; {new Date().getFullYear()} Salon Meblowy. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Salon Meblowy. Wszelkie prawa zastrzeżone. 
             </div>
             <div className='flex gap-4'>
               <a href='#' aria-label='Facebook'>

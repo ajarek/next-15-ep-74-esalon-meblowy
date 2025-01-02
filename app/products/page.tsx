@@ -9,7 +9,7 @@ import { Search } from '@/components/Search'
 const Products =async ({searchParams,}: {searchParams: Promise<{query?: string}>}) => {
   const { query } = await searchParams  
   return (
-    <div className='flex flex-col gap-4 py-16 px-8'>
+    <div className='min-h-screen flex flex-col  bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8 gap-4'>
       <h1 className='text-xl'>Wybierz meble z pełnego asortymentu </h1>
       <Search/>
       <div className='grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4'>
