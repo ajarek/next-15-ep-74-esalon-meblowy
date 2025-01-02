@@ -1,3 +1,4 @@
+import FurnitureFactory from '@/components/FurnitureFactory'
 import Handmade from '@/components/Handmade'
 import Hero from '@/components/Hero'
 
@@ -8,6 +9,7 @@ export default function Home() {
       <div className='grid gap-6'>
         <Hero />
         <Handmade />
+        <FurnitureFactory/>
       </div>
     </main>
   )
