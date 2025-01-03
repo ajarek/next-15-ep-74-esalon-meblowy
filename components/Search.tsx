@@ -33,6 +33,7 @@ export function Search() {
         defaultValue={searchParams.get('query')?.toString()}
         className='pl-10'
         aria-label='Search notes'
+        autoFocus
       />
     </div>
   )

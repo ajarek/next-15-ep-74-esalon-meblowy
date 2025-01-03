@@ -1,6 +1,7 @@
 import FurnitureFactory from '@/components/FurnitureFactory'
 import Handmade from '@/components/Handmade'
 import Hero from '@/components/Hero'
+import SalesDepartment from '@/components/SalesDepartment'
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <Handmade />
         <FurnitureFactory/>
+        <SalesDepartment/>
       </div>
     </main>
   )
