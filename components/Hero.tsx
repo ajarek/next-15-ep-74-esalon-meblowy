@@ -63,14 +63,16 @@ const Hero = () => {
             
           </div>
           <Sofa size={48} color='white' className='absolute top-5 left-5'  aria-label='Sofa'/>
-          <p className='text-white text-xl'>Nowe Produkty</p>
-          <Button
-            variant='outline'
-            className='text-black'
-            aria-label='Zobacz teraz'
-          >
-            Zobacz teraz
-          </Button>
+          <p className='text-white text-xl'>Nasze Produkty</p>
+          <Link
+          href='/products'
+          className={`${buttonVariants({
+            variant: 'default',
+          })}   shadow-xl`}
+          aria-label='Produkty'
+        >
+          Zobacz teraz
+        </Link>
         </div>
       </div>
     </section>

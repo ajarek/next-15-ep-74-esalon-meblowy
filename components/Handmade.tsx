@@ -16,7 +16,7 @@ const Handmade = () => {
       <h1 className='text-xl'>Meble z duszą ręcznie robione  w drewnie</h1>
       <div className='grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4'>
         {furniture
-        .filter((item)=>item.id <=3 && item.id >0)
+        .filter((item)=>item.id ==3 || item.id ==5 || item.id ==12)
         .map((item)=>(
           <Card
             key={item.id}

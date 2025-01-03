@@ -26,7 +26,64 @@
     "price": 1100,
     "description": "Piękna ława do Twojego domu.",
     "image": "/images/furniture-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Krzesło do pokoju",
+    "price": 1100,
+    "description": "Piękne krzesło do Twojego domu.",
+    "image": "/images/chair-1.webp"
+  },
+  {
+    "id": 6,
+    "name": "Krzesło rozkładane",
+    "price": 1200,
+    "description": "Piękne rozkładane krzesło do Twojego domu.",
+    "image": "/images/chair-2.webp"
+  },
+  {
+    "id": 7,
+    "name": "Krzesło",
+    "price": 1300,
+    "description": "Piękne krzesło do Twojego domu.",
+    "image": "/images/chair-3.webp"
+  },
+  {
+    "id": 8,
+    "name": "Krzesło+Ława",
+    "price": 1900,
+    "description": "Piękna ława do Twojego domu.",
+    "image": "/images/chair-4.webp"
+  },
+  {
+    "id": 9,
+    "name": "Łóżko 1 osobowe",
+    "price": 2100,
+    "description": "Piękna łózko do Twojego domu.",
+    "image": "/images/bed-1.webp"
+  },
+  { 
+    "id": 10,
+    "name": "Łózko 2 osobowe",
+    "price": 2400,
+    "description": "Piękne łózko do Twojego domu.",
+    "image": "/images/bed-2.webp"
+  },
+  {
+    "id": 11,
+    "name": "Łózko 2 osobowe",
+    "price": 2500,
+    "description": "Piękne łózko do Twojego domu.",
+    "image": "/images/bed-3.webp"
+  },
+  {
+    "id": 12,
+    "name": "Łózko 2 osobowe",
+    "price": 2900,
+    "description": "Pińne łózko do Twojego domu.",
+    "image": "/images/bed-4.webp"
   }
+  
   
 
 
