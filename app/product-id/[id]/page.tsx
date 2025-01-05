@@ -55,9 +55,9 @@ const ProductId =  ({ params }: { params: Promise<{ id: string }> }) => {
               image: item?.image || "",
             })
           }
-          className='w-fit mt-4'
+          className='w-fit bg-background text-foreground hover:bg-green-600 hover:text-background'
         >
-          Add to Cart
+          Dodaj do koszyka
         </Button>
       </div>
 

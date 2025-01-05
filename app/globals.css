@@ -128,6 +128,10 @@ body {
   border-bottom: 3px solid transparent;
   border-top: 3px solid #142864;
 }
-.test{
-  color:darkslategrey;
-}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: hsl(262.1 83.3% 57.8%);
+    }
