@@ -1,17 +1,13 @@
 import React from 'react'
 import { Button, buttonVariants } from './ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from './ui/card'
+import { auth } from "@/app/api/auth/auth"
 import Image from 'next/image'
 import Link from 'next/link'
 import { BookOpenText,  Sofa } from 'lucide-react'
+import Logout from './Logout'
 
-const Hero = () => {
+const Hero = async () => {
+  const session = await auth()
   return (
     <section className='grid grid-cols-[3fr_1fr] max-lg:grid-cols-1 gap-4 items-center'>
       <div className='relative w-full min-h-[500px] flex flex-col items-center justify-center'>
@@ -49,13 +45,7 @@ const Hero = () => {
             aria-label='Book'
           />
           <p className=' text-xl'>Zostań stałym klientem</p>
-          <Button
-            variant='default'
-            className=''
-            aria-label='Zarejestruj się'
-          >
-            Zarejestruj się
-          </Button>
+          <Logout session={session} />
         </div>
         <div className='box ' style={{backgroundImage:"url('/images/dark.jpg')"}}>
           <div className='ribbon'>
