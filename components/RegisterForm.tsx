@@ -39,11 +39,11 @@ const RegisterForm = () => {
   }
 
   return (
-    <div className='p-4 bg-slate-400 flex flex-col items-center rounded-lg shadow-lg'>
+    <div className='p-4 bg-white flex flex-col items-center rounded-lg shadow-lg'>
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-            src='/logo.png'
+            src='/images/logo.webp'
             alt='logo'
             width={40}
             height={40}
@@ -57,7 +57,7 @@ const RegisterForm = () => {
       >
         <Input
           type='text'
-          placeholder='first and last name'
+          placeholder='Imię i nazwisko'
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className='bg-white'
@@ -71,24 +71,24 @@ const RegisterForm = () => {
         />
         <Input
           type='password'
-          placeholder='Password'
+          placeholder='Hasło'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
            className='bg-white'
         />
         <Input
           type='text'
-          placeholder='Your photo'
+          placeholder='Twoje foto (opcjonalnie)'
           value={img}
           onChange={(e) => setImage(e.target.value)}
            className='bg-white'
         />
         <Input type='hidden' name='isAdmin' value={`${DEFAULT_IS_ADMIN}`} />
         <Button className='bg-[#0E78F9] hover:bg-[#0E78F9]/90' type='submit'>
-          Registration
+          Rejestracja
         </Button>
-        <Link href='/api/auth/signin' className='text-white'>
-          You already have an account? <b className='text-[#0E78F9]'>Login</b>
+        <Link href='/api/auth/signin' className='text-black'>
+          Masz już konto? <b className='text-[#0E78F9]'>Zaloguj się</b>
         </Link>
       </form>
     </div>

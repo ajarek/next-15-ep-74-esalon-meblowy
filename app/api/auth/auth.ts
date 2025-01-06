@@ -1,4 +1,5 @@
-import NextAuth, { AuthOptions, Session, User as NextAuthUser } from 'next-auth'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import NextAuth, { Session, User as NextAuthUser } from 'next-auth'
 import JWT from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { User } from '@/lib/models'
@@ -12,14 +13,14 @@ interface UserWithId extends NextAuthUser {
   username: string
 }
 
-const authOptions: AuthOptions = {
+const authOptions: any = {
   pages: {
     error: '/register',
   },
   theme: {
     colorScheme: 'auto',
     brandColor: '#0E78F9',
-    logo: '/logo.png',
+    logo: '/images/logo.webp',
     buttonText: '#ffffff',
   },
   providers: [
