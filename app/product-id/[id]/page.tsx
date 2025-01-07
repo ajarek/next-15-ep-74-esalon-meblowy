@@ -45,7 +45,7 @@ const ProductId = ({ params }: { params: Promise<{ id: string }> }) => {
             alt={item?.name || 'fabryka drewna'}
             fill
             sizes='(max-width: 768px) 100vw, 33vw'
-            className='object-cover'
+            className='object-cover w-full h-full'
           />
         </div>
         <div className='w-full flex flex-col gap-4 p-8 '>
