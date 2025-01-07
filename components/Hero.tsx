@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button, buttonVariants } from './ui/button'
-import { auth } from "@/app/api/auth/auth"
+import { buttonVariants } from './ui/button'
+import { auth } from '@/app/api/auth/auth'
 import Image from 'next/image'
 import Link from 'next/link'
-import { BookOpenText,  Sofa } from 'lucide-react'
+import { BookOpenText, Sofa } from 'lucide-react'
 import Logout from './Logout'
 
 const Hero = async () => {
@@ -34,10 +34,12 @@ const Hero = async () => {
         </Link>
       </div>
       <div className='flex flex-col gap-4'>
-        <div className='box' style={{backgroundImage:"url('/images/light.jpg')"}}>
+        <div
+          className='box'
+          style={{ backgroundImage: "url('/images/light.jpg')" }}
+        >
           <div className='ribbon'>
             <span>Klient</span>
-
           </div>
           <BookOpenText
             size={48}
@@ -47,22 +49,29 @@ const Hero = async () => {
           <p className=' text-xl'>Zostań stałym klientem</p>
           <Logout session={session} />
         </div>
-        <div className='box ' style={{backgroundImage:"url('/images/dark.jpg')"}}>
+        <div
+          className='box '
+          style={{ backgroundImage: "url('/images/dark.jpg')" }}
+        >
           <div className='ribbon'>
             <span>Produkty</span>
-            
           </div>
-          <Sofa size={48} color='white' className='absolute top-5 left-5'  aria-label='Sofa'/>
+          <Sofa
+            size={48}
+            color='white'
+            className='absolute top-5 left-5'
+            aria-label='Sofa'
+          />
           <p className='text-white text-xl'>Nasze Produkty</p>
           <Link
-          href='/products'
-          className={`${buttonVariants({
-            variant: 'default',
-          })}   shadow-xl`}
-          aria-label='Produkty'
-        >
-          Zobacz teraz
-        </Link>
+            href='/products'
+            className={`${buttonVariants({
+              variant: 'default',
+            })}   shadow-xl`}
+            aria-label='Produkty'
+          >
+            Zobacz teraz
+          </Link>
         </div>
       </div>
     </section>

@@ -6,7 +6,6 @@ import { revalidatePath } from 'next/cache'
 import bcrypt from 'bcryptjs'
 import { redirect } from 'next/navigation'
 
-
 export const addUser = async (formData: UserWithoutId) => {
   const { username, email, password, img, isAdmin } = formData
   const hashedPassword = await bcrypt.hash(password, 5)
@@ -37,7 +36,7 @@ export const deleteUser = async (formData: FormData) => {
     console.log({ message: `Deleted user ${id}` })
     return { message: `Deleted user ${id}` }
   } catch (err) {
-    return { message: 'Failed to delete user'+err }
+    return { message: 'Failed to delete user' + err }
   }
 }
 
@@ -63,11 +62,8 @@ export const updateUser = async (formData: FormData) => {
 
     return { message: `Updated user ${_id}` }
   } catch (err) {
-    return { message: 'Failed to update to db'+err }
+    return { message: 'Failed to update to db' + err }
   } finally {
     redirect('/')
   }
 }
-
-
-

@@ -1,5 +1,5 @@
-import { create } from "zustand"
-import { persist, createJSONStorage } from "zustand/middleware"
+import { create } from 'zustand'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type Item = {
   id: number
@@ -39,7 +39,10 @@ export const useCartStore = create<ItemState>()(
       removeAllFromCart: () => set({ items: [] }),
 
       total: () =>
-        get().items.reduce((acc, item) => acc + item.price * (item.quantity || 0), 0),
+        get().items.reduce(
+          (acc, item) => acc + item.price * (item.quantity || 0),
+          0
+        ),
       removeAll: () => set({ items: [] }),
 
       increment: (id: number) =>
@@ -48,7 +51,9 @@ export const useCartStore = create<ItemState>()(
           .map(() =>
             set((state) => ({
               items: state.items.map((item) =>
-                item.id === id ? { ...item, quantity: (item.quantity || 0) + 1 } : item
+                item.id === id
+                  ? { ...item, quantity: (item.quantity || 0) + 1 }
+                  : item
               ),
             }))
           ),
@@ -72,6 +77,6 @@ export const useCartStore = create<ItemState>()(
           ),
     }),
 
-    { name: "cartStore", storage: createJSONStorage(() => localStorage) }
+    { name: 'cartStore', storage: createJSONStorage(() => localStorage) }
   )
 )

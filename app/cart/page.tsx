@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
-import React from "react"
-import { useCartStore } from "@/store/cartStore"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
+import React from 'react'
+import { useCartStore } from '@/store/cartStore'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation'
 
 const Cart = () => {
   const { items, increment, decrement, removeItemFromCart, total, removeAll } =
@@ -75,9 +75,9 @@ const Cart = () => {
               Usuń wszystko
             </Button>
             <Button
-              onClick={() => router.push("/payment")}
+              onClick={() => router.push('/payment')}
               aria-label='go to payment'
-              className="bg-background text-foreground hover:bg-green-600 hover:text-background"
+              className='bg-background text-foreground hover:bg-green-600 hover:text-background'
             >
               Kupuję i płacę
             </Button>
@@ -85,10 +85,12 @@ const Cart = () => {
         </>
       ) : (
         <div className='flex flex-col gap-4'>
-          <h1 className='text-2xl text-center py-8'>Twoj koszyk jest pusty !</h1>
+          <h1 className='text-2xl text-center py-8'>
+            Twoj koszyk jest pusty !
+          </h1>
           <Button
             className='w-fit mx-auto bg-background text-foreground hover:bg-green-600 hover:text-background'
-            onClick={() => router.push("/products")}
+            onClick={() => router.push('/products')}
           >
             Wróć do produktów
           </Button>

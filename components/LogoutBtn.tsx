@@ -1,14 +1,14 @@
-import { LogOut } from "lucide-react"
-import { buttonVariants } from "@/components/ui/button"
-import Link from "next/link"
+import { LogOut } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import Link from 'next/link'
 
 const LogoutBtn = () => {
   return (
     <Link
       className={`${buttonVariants({
-        variant: "default"
+        variant: 'default',
       })} h-7 text-[18px] `}
-      href={"/api/auth/signout"}
+      href={'/api/auth/signout'}
       aria-label='Login'
     >
       Wyloguj <LogOut />

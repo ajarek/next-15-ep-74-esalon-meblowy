@@ -1,21 +1,21 @@
-"use client"
+'use client'
 
-import React, { useState } from "react"
-import { UserWithoutId } from "@/lib/models"
-import { addUser } from "@/lib/action"
-import { useRouter } from "next/navigation"
-import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import React, { useState } from 'react'
+import { UserWithoutId } from '@/lib/models'
+import { addUser } from '@/lib/action'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 const DEFAULT_IS_ADMIN: boolean = false
 
 const RegisterForm = () => {
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [img, setImage] = useState("")
+  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [img, setImage] = useState('')
   const [isAdmin] = useState(DEFAULT_IS_ADMIN)
 
   const router = useRouter()
@@ -32,7 +32,7 @@ const RegisterForm = () => {
 
     try {
       await addUser(formData)
-      router.push("/api/auth/signin")
+      router.push('/api/auth/signin')
     } catch (error) {
       console.log(error)
     }
@@ -67,27 +67,37 @@ const RegisterForm = () => {
           placeholder='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-           className='bg-white'
+          className='bg-white'
         />
         <Input
           type='password'
           placeholder='Hasło'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-           className='bg-white'
+          className='bg-white'
         />
         <Input
           type='text'
           placeholder='Twoje foto (opcjonalnie)'
           value={img}
           onChange={(e) => setImage(e.target.value)}
-           className='bg-white'
+          className='bg-white'
         />
-        <Input type='hidden' name='isAdmin' value={`${DEFAULT_IS_ADMIN}`} />
-        <Button className='bg-[#0E78F9] hover:bg-[#0E78F9]/90' type='submit'>
+        <Input
+          type='hidden'
+          name='isAdmin'
+          value={`${DEFAULT_IS_ADMIN}`}
+        />
+        <Button
+          className='bg-[#0E78F9] hover:bg-[#0E78F9]/90'
+          type='submit'
+        >
           Rejestracja
         </Button>
-        <Link href='/api/auth/signin' className='text-black'>
+        <Link
+          href='/api/auth/signin'
+          className='text-black'
+        >
           Masz już konto? <b className='text-[#0E78F9]'>Zaloguj się</b>
         </Link>
       </form>

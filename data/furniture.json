@@ -62,7 +62,7 @@
     "description": "Piękna łózko do Twojego domu.",
     "image": "/images/bed-1.webp"
   },
-  { 
+  {
     "id": 10,
     "name": "Łózko 2 osobowe",
     "price": 2400,
@@ -83,9 +83,4 @@
     "description": "Pińne łózko do Twojego domu.",
     "image": "/images/bed-4.webp"
   }
-  
-  
-
-
-  
 ]

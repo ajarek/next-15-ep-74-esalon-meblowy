@@ -84,7 +84,7 @@ const FormPayment = ({ nameUser }: { nameUser: string }) => {
             <Button
               type='submit'
               aria-label='Zamawiam i płacę'
-              className="bg-background text-foreground hover:bg-green-600 hover:text-background"
+              className='bg-background text-foreground hover:bg-green-600 hover:text-background'
             >
               Zamawiam i płacę
             </Button>
@@ -94,7 +94,7 @@ const FormPayment = ({ nameUser }: { nameUser: string }) => {
         <Button
           onClick={() => router.push('/products')}
           aria-label='Produkty'
-          className="bg-background text-foreground hover:bg-green-600 hover:text-background"
+          className='bg-background text-foreground hover:bg-green-600 hover:text-background'
         >
           Produkty
         </Button>
